@@ -1,0 +1,5 @@
+# ninja log v7
+0	626	1794034216778286083	tests/CMakeFiles/minibus_tests.dir/test_main.cpp.o	83c571552dd66661
+626	671	1794034217449256190	tests/minibus_tests	eb9a144e6f62575e
+626	671	1794034217449256190	tests/minibus_tests_e3b0c442_tests.cmake	eb9a144e6f62575e
+626	671	1794034217449256190	/home/Gaurav/Desktop/MiniBusDB/build/tests/minibus_tests_e3b0c442_tests.cmake	eb9a144e6f62575e

@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/Gaurav/Desktop/MiniBusDB/build/cmake_install.cmake",
+		"/home/Gaurav/Desktop/MiniBusDB/build/src/cmake_install.cmake",
+		"/home/Gaurav/Desktop/MiniBusDB/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

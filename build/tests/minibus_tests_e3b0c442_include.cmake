@@ -1,0 +1,5 @@
+if(EXISTS "/home/Gaurav/Desktop/MiniBusDB/build/tests/minibus_tests_e3b0c442_tests.cmake")
+  include("/home/Gaurav/Desktop/MiniBusDB/build/tests/minibus_tests_e3b0c442_tests.cmake")
+else()
+  add_test(minibus_tests_NOT_BUILT minibus_tests_NOT_BUILT)
+endif()

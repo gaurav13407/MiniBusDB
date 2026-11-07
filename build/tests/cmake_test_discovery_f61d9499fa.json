@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ProjectSetupTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "BasicAssertion",
+          "file": "\/home\/Gaurav\/Desktop\/MiniBusDB\/tests\/test_main.cpp",
+          "line": 3
+        }
+      ]
+    }
+  ]
+}
