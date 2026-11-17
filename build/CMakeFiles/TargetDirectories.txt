@@ -29,6 +29,7 @@
 /home/Gaurav/Desktop/MiniBusDB/build/CMakeFiles/test.dir
 /home/Gaurav/Desktop/MiniBusDB/build/CMakeFiles/edit_cache.dir
 /home/Gaurav/Desktop/MiniBusDB/build/CMakeFiles/rebuild_cache.dir
+/home/Gaurav/Desktop/MiniBusDB/build/src/CMakeFiles/minibus.dir
 /home/Gaurav/Desktop/MiniBusDB/build/src/CMakeFiles/test.dir
 /home/Gaurav/Desktop/MiniBusDB/build/src/CMakeFiles/edit_cache.dir
 /home/Gaurav/Desktop/MiniBusDB/build/src/CMakeFiles/rebuild_cache.dir

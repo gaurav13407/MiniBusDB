@@ -473,6 +473,42 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 # /home/Gaurav/Desktop/MiniBusDB/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target minibus
+
+
+#############################################
+# Order-only phony target for minibus
+
+build cmake_object_order_depends_target_minibus: phony || .
+
+build src/CMakeFiles/minibus.dir/types/value.cpp.o: CXX_COMPILER__minibus_unscanned_Debug /home/Gaurav/Desktop/MiniBusDB/src/types/value.cpp || cmake_object_order_depends_target_minibus
+  CONFIG = Debug
+  DEP_FILE = src/CMakeFiles/minibus.dir/types/value.cpp.o.d
+  FLAGS = -g -std=c++20
+  INCLUDES = -I/home/Gaurav/Desktop/MiniBusDB/include
+  OBJECT_DIR = src/CMakeFiles/minibus.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/minibus.dir/types
+  TARGET_SUPPORT_DIR = src/CMakeFiles/minibus.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target minibus
+
+
+#############################################
+# Link the static library src/libminibus.a
+
+build src/libminibus.a: CXX_STATIC_LIBRARY_LINKER__minibus_Debug src/CMakeFiles/minibus.dir/types/value.cpp.o
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = src/CMakeFiles/minibus.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = src/libminibus.a
+  TARGET_PDB = minibus.a.dbg
+  TARGET_SUPPORT_DIR = src/CMakeFiles/minibus.dir
+
 
 #############################################
 # Utility command for test
@@ -521,7 +557,7 @@ build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for minibus_tests
 
-build cmake_object_order_depends_target_minibus_tests: phony || .
+build cmake_object_order_depends_target_minibus_tests: phony || cmake_object_order_depends_target_minibus
 
 build tests/CMakeFiles/minibus_tests.dir/test_main.cpp.o: CXX_COMPILER__minibus_tests_unscanned_Debug /home/Gaurav/Desktop/MiniBusDB/tests/test_main.cpp || cmake_object_order_depends_target_minibus_tests
   CONFIG = Debug
@@ -533,6 +569,26 @@ build tests/CMakeFiles/minibus_tests.dir/test_main.cpp.o: CXX_COMPILER__minibus_
   OBJECT_FILE_DIR = tests/CMakeFiles/minibus_tests.dir
   TARGET_SUPPORT_DIR = tests/CMakeFiles/minibus_tests.dir
 
+build tests/CMakeFiles/minibus_tests.dir/types/type_id_test.cpp.o: CXX_COMPILER__minibus_tests_unscanned_Debug /home/Gaurav/Desktop/MiniBusDB/tests/types/type_id_test.cpp || cmake_object_order_depends_target_minibus_tests
+  CONFIG = Debug
+  DEFINES = -DGTEST_LINKED_AS_SHARED_LIBRARY=1
+  DEP_FILE = tests/CMakeFiles/minibus_tests.dir/types/type_id_test.cpp.o.d
+  FLAGS = -g -std=c++20
+  INCLUDES = -I/home/Gaurav/Desktop/MiniBusDB/include
+  OBJECT_DIR = tests/CMakeFiles/minibus_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/minibus_tests.dir/types
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/minibus_tests.dir
+
+build tests/CMakeFiles/minibus_tests.dir/types/value_test.cpp.o: CXX_COMPILER__minibus_tests_unscanned_Debug /home/Gaurav/Desktop/MiniBusDB/tests/types/value_test.cpp || cmake_object_order_depends_target_minibus_tests
+  CONFIG = Debug
+  DEFINES = -DGTEST_LINKED_AS_SHARED_LIBRARY=1
+  DEP_FILE = tests/CMakeFiles/minibus_tests.dir/types/value_test.cpp.o.d
+  FLAGS = -g -std=c++20
+  INCLUDES = -I/home/Gaurav/Desktop/MiniBusDB/include
+  OBJECT_DIR = tests/CMakeFiles/minibus_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/minibus_tests.dir/types
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/minibus_tests.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target minibus_tests
@@ -541,12 +597,12 @@ build tests/CMakeFiles/minibus_tests.dir/test_main.cpp.o: CXX_COMPILER__minibus_
 #############################################
 # Link the executable tests/minibus_tests
 
-build tests/minibus_tests tests/minibus_tests_e3b0c442_tests.cmake | ${cmake_ninja_workdir}tests/minibus_tests_e3b0c442_tests.cmake: CXX_EXECUTABLE_LINKER__minibus_tests_Debug tests/CMakeFiles/minibus_tests.dir/test_main.cpp.o | /usr/lib/libgtest_main.so.1.18.0 /usr/lib/libgtest.so.1.18.0
+build tests/minibus_tests tests/minibus_tests_e3b0c442_tests.cmake | ${cmake_ninja_workdir}tests/minibus_tests_e3b0c442_tests.cmake: CXX_EXECUTABLE_LINKER__minibus_tests_Debug tests/CMakeFiles/minibus_tests.dir/test_main.cpp.o tests/CMakeFiles/minibus_tests.dir/types/type_id_test.cpp.o tests/CMakeFiles/minibus_tests.dir/types/value_test.cpp.o | src/libminibus.a /usr/lib/libgtest_main.so.1.18.0 /usr/lib/libgtest.so.1.18.0 || src/libminibus.a
   CONFIG = Debug
   DEP_FILE = tests/CMakeFiles/minibus_tests.dir/link.d
   FLAGS = -g
   LINK_FLAGS = -Xlinker --dependency-file=tests/CMakeFiles/minibus_tests.dir/link.d
-  LINK_LIBRARIES = /usr/lib/libgtest_main.so.1.18.0  /usr/lib/libgtest.so.1.18.0
+  LINK_LIBRARIES = src/libminibus.a  /usr/lib/libgtest_main.so.1.18.0  /usr/lib/libgtest.so.1.18.0
   OBJECT_DIR = tests/CMakeFiles/minibus_tests.dir
   POST_BUILD = cd /home/Gaurav/Desktop/MiniBusDB/build/tests && /usr/bin/cmake -P /home/Gaurav/Desktop/MiniBusDB/build/tests/minibus_tests_e3b0c442_discovery.cmake --
   PRE_LINK = :
@@ -594,6 +650,10 @@ build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build libminibus.a: phony src/libminibus.a
+
+build minibus: phony src/libminibus.a
+
 build minibus_tests: phony tests/minibus_tests
 
 # =============================================================================
@@ -611,7 +671,7 @@ build all: phony src/all tests/all
 #############################################
 # Folder: /home/Gaurav/Desktop/MiniBusDB/build/src
 
-build src/all: phony
+build src/all: phony src/libminibus.a
 
 # =============================================================================
 

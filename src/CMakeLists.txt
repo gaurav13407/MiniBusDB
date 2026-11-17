@@ -1,12 +1,14 @@
 # MiniBusDB library
 
-add_library(minibus INTERFACE)
+add_library(minibus 
+    types/value.cpp
+)
 
 # Public include directory
 target_include_directories(minibus
-    INTERFACE
+    PUBLIC
         ${PROJECT_SOURCE_DIR}/include
 )
 
 # Require C++20
-target_compile_features(minibus INTERFACE cxx_std_20)
+target_compile_features(minibus PUBLIC cxx_std_20)

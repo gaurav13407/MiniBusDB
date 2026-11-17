@@ -1,2 +1,5 @@
-ProjectSetupTest.BasicAssertion 1 0.00154009
+ProjectSetupTest.BasicAssertion 5 0.000253639
+TypeIdTest.IntegerTypeExists 2 0.000577221
+TypeIdTest.AllTypesHaveExpectedValues 1 0.00101941
+TypeIdTest.TypesAreDistinct 1 0.00113917
 ---

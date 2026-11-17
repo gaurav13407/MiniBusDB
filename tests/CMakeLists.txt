@@ -1,5 +1,7 @@
 add_executable(minibus_tests
     test_main.cpp
+    types/type_id_test.cpp
+    types/value_test.cpp
 )
 
 target_link_libraries(minibus_tests

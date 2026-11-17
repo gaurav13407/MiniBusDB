@@ -1,5 +1,5 @@
 {
-  "tests": 1,
+  "tests": 5,
   "name": "AllTests",
   "testsuites": [
     {
@@ -10,6 +10,38 @@
           "name": "BasicAssertion",
           "file": "\/home\/Gaurav\/Desktop\/MiniBusDB\/tests\/test_main.cpp",
           "line": 3
+        }
+      ]
+    },
+    {
+      "name": "TypeIdTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "IntegerTypeExists",
+          "file": "\/home\/Gaurav\/Desktop\/MiniBusDB\/tests\/types\/type_id_test.cpp",
+          "line": 3
+        },
+        {
+          "name": "AllTypesHaveExpectedValues",
+          "file": "\/home\/Gaurav\/Desktop\/MiniBusDB\/tests\/types\/type_id_test.cpp",
+          "line": 10
+        },
+        {
+          "name": "TypesAreDistinct",
+          "file": "\/home\/Gaurav\/Desktop\/MiniBusDB\/tests\/types\/type_id_test.cpp",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "name": "ValueTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "IntegerConstruction",
+          "file": "\/home\/Gaurav\/Desktop\/MiniBusDB\/tests\/types\/value_test.cpp",
+          "line": 6
         }
       ]
     }

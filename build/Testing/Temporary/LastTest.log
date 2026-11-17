@@ -1,10 +1,10 @@
-Start testing: Nov 07 12:20 IST
+Start testing: Nov 17 13:10 IST
 ----------------------------------------------------------
-1/1 Testing: ProjectSetupTest.BasicAssertion
-1/1 Test: ProjectSetupTest.BasicAssertion
+1/4 Testing: ProjectSetupTest.BasicAssertion
+1/4 Test: ProjectSetupTest.BasicAssertion
 Command: "/home/Gaurav/Desktop/MiniBusDB/build/tests/minibus_tests" "--gtest_filter=ProjectSetupTest.BasicAssertion" "--gtest_also_run_disabled_tests"
 Directory: /home/Gaurav/Desktop/MiniBusDB/build/tests
-"ProjectSetupTest.BasicAssertion" start time: Nov 07 12:20 IST
+"ProjectSetupTest.BasicAssertion" start time: Nov 17 13:10 IST
 Output:
 ----------------------------------------------------------
 Running main() from /usr/src/debug/gtest/googletest-1.18.0/googletest/src/gtest_main.cc
@@ -23,8 +23,89 @@ Note: Google Test filter = ProjectSetupTest.BasicAssertion
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"ProjectSetupTest.BasicAssertion" end time: Nov 07 12:20 IST
+"ProjectSetupTest.BasicAssertion" end time: Nov 17 13:10 IST
 "ProjectSetupTest.BasicAssertion" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 07 12:20 IST
+2/4 Testing: TypeIdTest.IntegerTypeExists
+2/4 Test: TypeIdTest.IntegerTypeExists
+Command: "/home/Gaurav/Desktop/MiniBusDB/build/tests/minibus_tests" "--gtest_filter=TypeIdTest.IntegerTypeExists" "--gtest_also_run_disabled_tests"
+Directory: /home/Gaurav/Desktop/MiniBusDB/build/tests
+"TypeIdTest.IntegerTypeExists" start time: Nov 17 13:10 IST
+Output:
+----------------------------------------------------------
+Running main() from /usr/src/debug/gtest/googletest-1.18.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TypeIdTest.IntegerTypeExists
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TypeIdTest
+[ RUN      ] TypeIdTest.IntegerTypeExists
+[       OK ] TypeIdTest.IntegerTypeExists (0 ms)
+[----------] 1 test from TypeIdTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TypeIdTest.IntegerTypeExists" end time: Nov 17 13:10 IST
+"TypeIdTest.IntegerTypeExists" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: TypeIdTest.AllTypesHaveExpectedValues
+3/4 Test: TypeIdTest.AllTypesHaveExpectedValues
+Command: "/home/Gaurav/Desktop/MiniBusDB/build/tests/minibus_tests" "--gtest_filter=TypeIdTest.AllTypesHaveExpectedValues" "--gtest_also_run_disabled_tests"
+Directory: /home/Gaurav/Desktop/MiniBusDB/build/tests
+"TypeIdTest.AllTypesHaveExpectedValues" start time: Nov 17 13:10 IST
+Output:
+----------------------------------------------------------
+Running main() from /usr/src/debug/gtest/googletest-1.18.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TypeIdTest.AllTypesHaveExpectedValues
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TypeIdTest
+[ RUN      ] TypeIdTest.AllTypesHaveExpectedValues
+[       OK ] TypeIdTest.AllTypesHaveExpectedValues (0 ms)
+[----------] 1 test from TypeIdTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TypeIdTest.AllTypesHaveExpectedValues" end time: Nov 17 13:10 IST
+"TypeIdTest.AllTypesHaveExpectedValues" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: TypeIdTest.TypesAreDistinct
+4/4 Test: TypeIdTest.TypesAreDistinct
+Command: "/home/Gaurav/Desktop/MiniBusDB/build/tests/minibus_tests" "--gtest_filter=TypeIdTest.TypesAreDistinct" "--gtest_also_run_disabled_tests"
+Directory: /home/Gaurav/Desktop/MiniBusDB/build/tests
+"TypeIdTest.TypesAreDistinct" start time: Nov 17 13:10 IST
+Output:
+----------------------------------------------------------
+Running main() from /usr/src/debug/gtest/googletest-1.18.0/googletest/src/gtest_main.cc
+Note: Google Test filter = TypeIdTest.TypesAreDistinct
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TypeIdTest
+[ RUN      ] TypeIdTest.TypesAreDistinct
+[       OK ] TypeIdTest.TypesAreDistinct (0 ms)
+[----------] 1 test from TypeIdTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TypeIdTest.TypesAreDistinct" end time: Nov 17 13:10 IST
+"TypeIdTest.TypesAreDistinct" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 17 13:10 IST
